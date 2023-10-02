@@ -1,8 +1,16 @@
-You can record data on your V2 micro:bit using the built in sensors and inputs. 
+You can record (log) data from sensors on your micro:bit.
 
-In this example, the data from sound levels have been logged.
+In this example, data from the microphone is logged.
 
-<div style="position:relative;height:calc(100px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_VCJdqy3yALDh" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+loops.everyInterval(500, function () {
+    led.plotBarGraph(
+    input.soundLevel(),
+    255
+    )
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+})
+```
 
 You will need to install an extension to use the `Data Logger`{:class='microbitdatalogger'}.
 
@@ -19,28 +27,36 @@ You can find a `log data`{:class='microbitdatalogger'} block inside the `Data Lo
 
 Place the `log data`{:class='microbitdatalogger'} block inside an event block or a loop block. The `every`{:class='microbitloops'} block has been used in this example.
 
-<div style="position:relative;height:calc(100px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_fY47PteVYTR2" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
+```microbit
+loops.everyInterval(500, function () {
+    datalogger.log(datalogger.createCV("", 0))
+})
+```
 
 You need to label your column field with a useful name for your data. In this example, the column has been labelled `Sound Level`.
 
-<div style="position:relative;height:calc(100px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_fY47PteVYTR2" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
+```microbit
+loops.everyInterval(500, function () {
+    datalogger.log(datalogger.createCV("Sound level", 0))
+})
+```
 
 You also need to add the input sensor that will be logged into the value field of the `log data`{:class='microbitdatalogger'} block.
 
 In this example, the `sound level`{:class='microbitinput'} block which can be found in the `Input`{:class='microbitinput'} menu has been used.
 
-<div style="position:relative;height:calc(100px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_XbgU79F93PvT" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+loops.everyInterval(500, function () {
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
+})
+```
 
 You can view the data logged on your micro:bit by plugging it into your computer and opening the data file. 
 
 You can add more than one sensor to be logged on the same `log data`{:class='microbitdatalogger'} block. 
 
-
-
 ### Logging data for V1 users
 
-If you are using a micro:bit V1, you can only log data using two microbits. One transmits the data using the radio and the other receives this data.
+If you are using a micro:bit V1, you can only log data using two micro:bits. One transmits the data using the radio and the other receives this data.
 
-Take a look at the [project from micro:bit to help you log data on the V1](https://microbit.org/projects/make-it-code-it/makecode-wireless-data-logger/#sensor-/-transmitter){:target="_blank"}
+Take a look at this [project from micro:bit to help you log data on the V1](https://microbit.org/projects/make-it-code-it/makecode-wireless-data-logger/#sensor-/-transmitter){:target="_blank"}
