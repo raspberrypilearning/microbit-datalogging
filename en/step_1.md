@@ -1,4 +1,4 @@
-You can record (log) data from sensors on your micro:bit.
+You can store (log) data to your micro:bit V2 that will still be there after you unplug the power. This is not the case with data stored using variables.
 
 In this example, data from the microphone is logged.
 
