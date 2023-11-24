@@ -1,10 +1,10 @@
-title: Data logging
+title: Registratie van gegevens
 hero_image: images/banner.png
-description: Data logging on micro:bit
+description: Gegevensregistratie op de micro:bit
 version: 4
 listed: false
 copyedit: false
 last_tested: "2022-05-19"
 steps:
   - 
-    title: Introduction
+    title: Inleiding
