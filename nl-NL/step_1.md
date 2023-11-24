@@ -1,6 +1,6 @@
-You can store (log) data to your micro:bit V2 so that it will still be there after you unplug the power. This is not the case with data stored using variables.
+Je kunt (log) gegevens opslaan naar je micro:bit V2, zodat deze behouden blijven nadat je de stroom loskoppelt. Dit is niet het geval bij gegevens die zijn opgeslagen met behulp van variabelen.
 
-In this example, data from the microphone is logged.
+In dit voorbeeld worden gegevens van de microfoon geregistreerd.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -12,19 +12,19 @@ loops.everyInterval(500, function () {
 })
 ```
 
-You will need to install an extension to use the `Data Logger`{:class='microbitdatalogger'}.
+Je moet een extensie installeren om de `Data Logger`{:class='microbitdatalogger'} te kunnen gebruiken.
 
-On the menu panel, click on **Extensions**. Another window will open showing recommended extensions.
+Klik in het menupaneel op **Uitbreidingen**. Er wordt een ander venster geopend met de aanbevolen extensies.
 
-Click on the **data logger** and it will be installed as a menu item.
+Klik op de **data logger** en het zal worden geïnstalleerd als menu-item.
 
-![The data logger extension being installed by clicking the extensions menu and then 'data logger'. A new block menu appears labelled 'Data Logger'.](images/installing-datalogger.gif)
+![De data logger-extensie wordt geïnstalleerd door te klikken op het menu uitbreidingen en vervolgens op 'data logger'. Een nieuw blokmenu verschijnt met het label 'Data Logger'.](images/installing-datalogger.gif)
 
-You can find a `log data`{:class='microbitdatalogger'} block in the `Data Logger`{:class='microbitdatalogger'} menu.
+Je kunt een `log data`{:class='microbitdatalogger'} blok vinden in het `Data Logger`{:class='microbitdatalogger'} menu.
 
 <img src="images/data-logger.png" alt="The Data Logger menu with the 'log data column...value' block highlighted." width="350"/>
 
-Place the `log data`{:class='microbitdatalogger'} block inside an event block or a loop block. The `every`{:class='microbitloops'} block has been used in this example.
+Plaats het `log data`{:class='microbitdatalogger'} blok in een gebeurtenisblok of een lusblok. Het `elk (ms)`{:class='microbitloops'} blok is in dit voorbeeld gebruikt.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -32,7 +32,7 @@ loops.everyInterval(500, function () {
 })
 ```
 
-You need to label your column field with a useful name for your data. In this example, the column has been labelled `Sound Level`.
+Je moet het kolomveld een label geven met een handige naam voor je gegevens. In dit voorbeeld heeft de kolom het label 'Geluidsniveau' gekregen.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -40,9 +40,9 @@ loops.everyInterval(500, function () {
 })
 ```
 
-You also need to add the input sensor that will be logged into the value field of the `log data`{:class='microbitdatalogger'} block.
+Je moet ook de invoersensor toevoegen die wordt geregistreerd in het waardeveld van het `log data`{:class='microbitdatalogger'} blok.
 
-In this example, the `sound level`{:class='microbitinput'} block, which can be found in the `Input`{:class='microbitinput'} menu, has been used.
+In dit voorbeeld is het blok `geluidsniveau`{:class='microbitinput'} gebruikt, dat te vinden is in het menu `Invoer`{:class='microbitinput'}.
 
 ```microbit
 loops.everyInterval(500, function () {
@@ -50,12 +50,12 @@ loops.everyInterval(500, function () {
 })
 ```
 
-You can view the data logged on your micro:bit by plugging it into your computer and opening the data file.
+Je kunt de op je micro:bit vastgelegde data bekijken door deze aan je computer te koppelen en het data bestand te openen.
 
-You can add more than one sensor to be logged in the same `log data`{:class='microbitdatalogger'} block.
+Je kunt meer dan één sensor toevoegen om gegevens in hetzelfde `log data`{:class='microbitdatalogger’} blok vast te leggen.
 
-### Logging data for V1 users
+### Gegevensregistratie voor V1 gebruikers
 
-If you are using a micro:bit V1, you can only log data using two micro:bits. One transmits the data using the radio and the other receives this data.
+Als je een micro:bit V1 gebruikt, kun je alleen gegevens registreren met twee micro:bits. De ene zendt de gegevens via de radio en de andere ontvangt deze gegevens.
 
-Take a look at this [project from micro:bit to help you log data on the V1](https://microbit.org/projects/make-it-code-it/makecode-wireless-data-logger/#sensor-/-transmitter){:target="\_blank"}.
+Bekijk dit [project van micro:bit om je te helpen gegevens te registreren op de V1](https://microbit.org/projects/make-it-code-it/makecode-wireless-data-logger/#sensor-/-transmitter){:target="\_blank"}.
