@@ -58,4 +58,4 @@ You can add more than one sensor to be logged in the same `log data`{:class='mic
 
 If you are using a micro:bit V1, you can only log data using two micro:bits. One transmits the data using the radio and the other receives this data.
 
-Take a look at this [project from micro:bit to help you log data on the V1](https://microbit.org/projects/make-it-code-it/makecode-wireless-data-logger/#sensor-/-transmitter){:target="\_blank"}.
+Take a look at this [project from micro:bit to help you log data on the V1](https://microbit.org/projects/make-it-code-it/makecode-wireless-data-logger/#sensor-/-transmitter){:target="_blank"}.
