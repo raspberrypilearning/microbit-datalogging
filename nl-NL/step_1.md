@@ -58,4 +58,4 @@ Je kunt meer dan één sensor toevoegen om gegevens in hetzelfde `log data`{:cla
 
 Als je een micro:bit V1 gebruikt, kun je alleen gegevens registreren met twee micro:bits. De ene zendt de gegevens via de radio en de andere ontvangt deze gegevens.
 
-Bekijk dit [project van micro:bit om je te helpen gegevens te registreren op de V1](https://microbit.org/projects/make-it-code-it/makecode-wireless-data-logger/#sensor-/-transmitter){:target="\_blank"}.
+Bekijk dit [project van micro:bit om je te helpen gegevens te registreren op de V1](https://microbit.org/projects/make-it-code-it/makecode-wireless-data-logger/#sensor-/-transmitter){:target="_blank"}.
